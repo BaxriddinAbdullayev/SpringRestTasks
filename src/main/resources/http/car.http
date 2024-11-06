@@ -1,0 +1,32 @@
+### Get all
+GET localhost:8080/car/getAll
+
+
+### Get by id
+GET localhost:8080/car/byId/b2a9ee56-d611-4a59-828e-7c88b512c750
+
+
+### Create
+POST localhost:8080/car/create
+Content-Type: application/json
+
+{
+  "name": "Toyota",
+  "model": "Camry",
+  "year": 2020
+}
+
+
+### Update
+PUT localhost:8080/car/update/9d6b42cb-b91e-42d4-9362-b6200a6a3522
+Content-Type: application/json
+
+{
+  "name": "Spark",
+  "model": "LTZ",
+  "year": 2020
+}
+
+
+### Delete
+DELETE localhost:8080/car/delete/9d6b42cb-b91e-42d4-9362-b6200a6a3522
